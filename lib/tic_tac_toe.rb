@@ -62,7 +62,6 @@ end
   def current_player()
   total_turns = turn_count()
     (total_turns.even?) ? "X" : "O"
-  
 end
   
   
