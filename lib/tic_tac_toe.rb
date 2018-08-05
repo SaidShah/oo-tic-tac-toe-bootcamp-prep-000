@@ -73,7 +73,9 @@ end
   return false
  else
   
-  
+  def is_array_empty()
+  @board.all? {|c| (c==" ")||(c=="")}
+end
   
   
   
