@@ -96,7 +96,7 @@ end
       
     end
   
-
+  end
  end
  false
 end
@@ -113,6 +113,7 @@ end
   if full?()==false 
   return false
   end
+end
   
   def winner()
 if((won?().class==Array))
