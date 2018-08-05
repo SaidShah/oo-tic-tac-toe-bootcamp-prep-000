@@ -105,7 +105,16 @@ end
     !@board.any? {|index| (index==" ")||(index=="")}
 end
   
-  
+  def draw?(board)
+
+ if((won?()==false)&&(full?()==true))
+  return true
+  elsif((won?()==false)&&(full?()==false))
+  return false
+  else
+  return false
+  end
+end
   
   
   
