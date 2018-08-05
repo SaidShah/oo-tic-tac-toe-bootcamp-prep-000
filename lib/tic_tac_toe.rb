@@ -116,13 +116,14 @@ end
   end
 end
   
-  def over?()
-  if((won?().class==Array)||(draw?()==true)||(full?()==true))
-    true
-  else
-    false
+  def over?(board)
+  in_progress= false
+  if(won?()||draw?()||full?())
+ return true
+ end
+  if full?()==false 
+  return false
   end
-end
   
   def winner()
 if((won?().class==Array))
