@@ -105,7 +105,7 @@ end
     !@board.any? {|index| (index==" ")||(index=="")}
 end
 
-  def over?(board)
+  def over?()
   in_progress= false
   if(won?()||draw?()||full?())
  return true
@@ -113,6 +113,13 @@ end
   if full?()==false 
   return false
   end
+  if((won?().class==Array)||(draw?()==true)||(full?()==true))
+ in_progress=true
+ end
+  if((full?()==false))
+  in_progress= false
+  end
+return in_progress
 end
   
   def winner()
