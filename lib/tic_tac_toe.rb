@@ -104,18 +104,7 @@ end
   def full?()
     !@board.any? {|index| (index==" ")||(index=="")}
 end
-  
-  def draw?(board)
 
- if((won?()==false)&&(full?()==true))
-  return true
-  elsif((won?()==false)&&(full?()==false))
-  return false
-  else
-  return false
-  end
-end
-  
   def over?(board)
   in_progress= false
   if(won?()||draw?()||full?())
@@ -133,7 +122,17 @@ if((won?().class==Array))
  end
 end
   
-  
+  def draw?()
+<<<<<<< HEAD
+ !won?() && full?() ? true: false
+ if !won?() && full?()
+ return true
+ elsif !won?()==false && !full?()
+ return false
+ else won?()
+   return false
+end
+end
   
   
   
