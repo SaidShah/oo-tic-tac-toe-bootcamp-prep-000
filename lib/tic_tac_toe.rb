@@ -64,17 +64,26 @@ end
     (total_turns.even?) ? "X" : "O"
 end
   
-  def won?()
-  is_empty = @board.none? { |c| c=="O" || c=="X" }
- if(is_empty)
-
- if((is_array_empty()==true)||(@board == nil))
-  return false
- else
-  
   def is_array_empty()
   @board.all? {|c| (c==" ")||(c=="")}
 end
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
   
   
   
