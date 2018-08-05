@@ -143,7 +143,7 @@ end
   def play()
 until over?()
 current_player()
-turn(board)
+turn()
 end
 if(won?())
   puts "Congratulations #{winner()}!"
