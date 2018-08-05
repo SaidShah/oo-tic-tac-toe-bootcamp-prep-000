@@ -124,7 +124,13 @@ end
   end
 end
   
-  
+  def winner()
+if((won?().class==Array))
+  temp_array = won?()
+  index = temp_array[0]
+  @board[index]
+ end
+end
   
   
   
