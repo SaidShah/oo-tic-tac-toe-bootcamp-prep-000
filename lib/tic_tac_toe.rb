@@ -19,7 +19,7 @@ end
 num = (user_input.to_i - 1)
 end
   
-  def move(index,player)
+  def move(index,player="X")
  @board[index]=player
 end
 
