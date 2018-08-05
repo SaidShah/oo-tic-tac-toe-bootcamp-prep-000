@@ -123,7 +123,7 @@ if((won?().class==Array))
 end
   
   def draw?()
- !won?() && full?() ? true: false
+ #!won?() && full?() ? true: false
  if !won?() && full?()
  return true
  elsif !won?()==false && !full?()
