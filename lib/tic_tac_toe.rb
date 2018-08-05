@@ -101,7 +101,9 @@ end
  false
 end
   
-  
+  def full?()
+    !@board.any? {|index| (index==" ")||(index=="")}
+end
   
   
   
