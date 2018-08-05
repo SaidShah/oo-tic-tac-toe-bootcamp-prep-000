@@ -116,7 +116,13 @@ end
   end
 end
   
-  
+  def over?()
+  if((won?().class==Array)||(draw?()==true)||(full?()==true))
+    true
+  else
+    false
+  end
+end
   
   
   
